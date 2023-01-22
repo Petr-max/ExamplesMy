@@ -1,10 +1,10 @@
 ﻿Console.Clear();
-// Console.SetCursorPosition(10, 4);
-// Console.WriteLine("+");
+//Console.SetCursorPosition(10, 4);
+//Console.WriteLine("+");
 
-int xa = 30, ya = 1,
-    xb = 1, yb = 20,
-    xc = 80, yc = 20;
+int xa = 1, ya = 1;
+int xb = 1, yb = 30;
+int xc = 40, yc = 30;
 
 Console.SetCursorPosition(xa, ya);
 Console.WriteLine("+");
@@ -12,14 +12,14 @@ Console.WriteLine("+");
 Console.SetCursorPosition(xb, yb);
 Console.WriteLine("+");
 
-Console.SetCursorPosition(xc, yc);
+Console.SetCursorPosition(xс, yс);
 Console.WriteLine("+");
 
 int x = xa, y = xb;
 
-int count = 10;
+int count = 0;
 
-while (count < 10000)
+while (count < 10)
 {
   int what = new Random().Next(0, 3); // (0;3) 0 1 2
   if (what == 0)
@@ -39,7 +39,7 @@ while (count < 10000)
   }
   Console.SetCursorPosition(x, y);
   Console.WriteLine("+");
-  count++;
+  count++; // либо так: count = cout + 1; либо так: count +=1 ;
 }
 
 
